@@ -7,9 +7,12 @@
 
 # testing
 /coverage
+/.firebase/*
 
 # production
 /build
+/dist
+/android
 
 # misc
 .DS_Store
