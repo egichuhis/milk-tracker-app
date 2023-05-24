@@ -3,7 +3,9 @@
   "private": true,
   "version": "0.0.1",
   "type": "module",
+  "main": "main.js",
   "scripts": {
+    "electron": "electron .",
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
@@ -39,6 +41,7 @@
     "@vitejs/plugin-legacy": "^4.0.2",
     "@vitejs/plugin-react": "^3.1.0",
     "cypress": "^12.7.0",
+    "electron": "^15.3.1",
     "eslint": "^8.35.0",
     "eslint-plugin-react": "^7.32.2",
     "jsdom": "^21.1.0",
