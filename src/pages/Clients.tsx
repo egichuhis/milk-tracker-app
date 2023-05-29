@@ -7,6 +7,7 @@ import {
 } from "@ionic/react";
 import "./Clients.css";
 import ClientList from '../components/ClientList';
+import AddClientBtn from '../components/FloatingButton';
 
 const Clients: React.FC = () => {
   return (
@@ -24,6 +25,7 @@ const Clients: React.FC = () => {
         </IonHeader>
         {/* Add Clients List */}
         <ClientList name="Clients List" />
+        <AddClientBtn/>
       </IonContent>
     </IonPage>
   );
