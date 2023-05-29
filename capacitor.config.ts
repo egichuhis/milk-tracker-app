@@ -2,7 +2,7 @@ import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
   appId: 'io.ionic.starter',
-  appName: 'milk-tracker-app',
+  appName: 'Maziwa',
   webDir: 'dist',
   server: {
     androidScheme: 'https'
