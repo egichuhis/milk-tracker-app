@@ -8,7 +8,7 @@ import {
 import ExploreContainer from "../components/CalendarContainer";
 import "./Clients.css";
 
-const Tab2: React.FC = () => {
+const Clients: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
@@ -22,10 +22,10 @@ const Tab2: React.FC = () => {
             <IonTitle size="large">Clients</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <ExploreContainer name="Clients page" />
+        {/* Add Client Page */}
       </IonContent>
     </IonPage>
   );
 };
 
-export default Tab2;
+export default Clients;

@@ -8,14 +8,14 @@ import {
 import CalendarContainer from "../components/CalendarContainer";
 import "./Record.css";
 
-const Tab1: React.FC = () => {
+const Record: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
         <IonToolbar>
           <IonTitle>Record</IonTitle>
         </IonToolbar>
-      </IonHeader>
+      </IonHeader>  
       <IonContent fullscreen>
         <IonHeader collapse="condense">
           <IonToolbar>
@@ -28,4 +28,4 @@ const Tab1: React.FC = () => {
   );
 };
 
-export default Tab1;
+export default Record;
