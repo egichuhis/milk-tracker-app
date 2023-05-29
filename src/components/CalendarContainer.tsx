@@ -1,4 +1,5 @@
 import './CalendarContainer.css';
+import { IonDatetime } from "@ionic/react";
 
 interface ContainerProps {
   name: string;
@@ -7,7 +8,8 @@ interface ContainerProps {
 const CalendarContainer: React.FC<ContainerProps> = ({ name }) => {
   return (
     <div className="container">
-     {/* Add Calendar */}
+      {/* Add Calendar */}
+      <IonDatetime></IonDatetime>
     </div>
   );
 };
