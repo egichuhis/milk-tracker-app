@@ -11,7 +11,7 @@ import {
 } from "@ionic/react";
 import { IonReactRouter } from "@ionic/react-router";
 import { people, statsChart, documentText } from "ionicons/icons";
-import Record from "./pages/Record";
+import Records from "./pages/Records";
 import Clients from "./pages/Clients";
 import Reports from "./pages/Reports";
 
@@ -41,8 +41,8 @@ const App: React.FC = () => (
     <IonReactRouter>
       <IonTabs>
         <IonRouterOutlet>
-          <Route exact path="/record">
-            <Record />
+          <Route exact path="/records">
+            <Records />
           </Route>
           <Route exact path="/clients">
             <Clients />
@@ -51,13 +51,13 @@ const App: React.FC = () => (
             <Reports />
           </Route>
           <Route exact path="/">
-            <Redirect to="/record" />
+            <Redirect to="/records" />
           </Route>
         </IonRouterOutlet>
         <IonTabBar slot="bottom">
-          <IonTabButton tab="record" href="/record">
+          <IonTabButton tab="records" href="/records">
             <IonIcon aria-hidden="true" icon={documentText} />
-            <IonLabel>Record</IonLabel>
+            <IonLabel>Records</IonLabel>
           </IonTabButton>
           <IonTabButton tab="clients" href="/clients">
             <IonIcon aria-hidden="true" icon={people} />
