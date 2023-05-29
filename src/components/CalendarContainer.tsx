@@ -8,7 +8,6 @@ interface ContainerProps {
 const CalendarContainer: React.FC<ContainerProps> = ({ name }) => {
   return (
     <div className="container">
-      {/* Add Calendar */}
       <IonDatetime></IonDatetime>
     </div>
   );

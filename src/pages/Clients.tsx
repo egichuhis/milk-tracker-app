@@ -5,8 +5,9 @@ import {
   IonTitle,
   IonToolbar,
 } from "@ionic/react";
-import ExploreContainer from "../components/CalendarContainer";
 import "./Clients.css";
+import ClientList from '../components/ClientList';
+import AddClientBtn from '../components/FloatingButton';
 
 const Clients: React.FC = () => {
   return (
@@ -22,7 +23,9 @@ const Clients: React.FC = () => {
             <IonTitle size="large">Clients</IonTitle>
           </IonToolbar>
         </IonHeader>
-        {/* Add Client Page */}
+        {/* Add Clients List */}
+        <ClientList name="Clients List" />
+        <AddClientBtn/>
       </IonContent>
     </IonPage>
   );

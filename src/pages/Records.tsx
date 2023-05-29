@@ -22,6 +22,7 @@ const Records: React.FC = () => {
             <IonTitle size="large">Records</IonTitle>
           </IonToolbar>
         </IonHeader>
+        {/* Add Calendar Page */}
         <CalendarContainer name="Records page" />
       </IonContent>
     </IonPage>
