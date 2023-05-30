@@ -6,27 +6,27 @@ import {
   IonToolbar,
 } from "@ionic/react";
 import CalendarContainer from "../components/CalendarContainer";
-import "./Records.css";
+import "./Dairy.css";
 
-const Records: React.FC = () => {
+const Dairy: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Records</IonTitle>
+          <IonTitle>Dairy</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
         <IonHeader collapse="condense">
           <IonToolbar>
-            <IonTitle size="large">Records</IonTitle>
+            <IonTitle size="large">Dairy</IonTitle>
           </IonToolbar>
         </IonHeader>
         {/* Add Calendar Page */}
-        <CalendarContainer name="Records page" />
+        <CalendarContainer name="Dairy page" />
       </IonContent>
     </IonPage>
   );
 };
 
-export default Records;
+export default Dairy;
