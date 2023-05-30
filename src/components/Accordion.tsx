@@ -5,6 +5,8 @@ import {
   IonItem,
   IonLabel,
 } from "@ionic/react";
+import Card from "../components/Card";
+
 function Accordion() {
   return (
     <IonAccordionGroup>
@@ -13,7 +15,7 @@ function Accordion() {
           <IonLabel>Mama Waigi</IonLabel>
         </IonItem>
         <div className="ion-padding" slot="content">
-          First Content
+          <Card />
         </div>
       </IonAccordion>
       <IonAccordion value="second">
@@ -21,7 +23,7 @@ function Accordion() {
           <IonLabel>Justus wa Pastor</IonLabel>
         </IonItem>
         <div className="ion-padding" slot="content">
-          Second Content
+          <Card />
         </div>
       </IonAccordion>
       <IonAccordion value="third">
@@ -29,7 +31,7 @@ function Accordion() {
           <IonLabel>Mama Salome</IonLabel>
         </IonItem>
         <div className="ion-padding" slot="content">
-          Third Content
+          <Card />
         </div>
       </IonAccordion>
       <IonAccordion value="fourth">
@@ -37,7 +39,7 @@ function Accordion() {
           <IonLabel>Mama Sammy</IonLabel>
         </IonItem>
         <div className="ion-padding" slot="content">
-          Fourth Content
+          <Card />
         </div>
       </IonAccordion>
       <IonAccordion value="fifth">
@@ -45,7 +47,7 @@ function Accordion() {
           <IonLabel>Mujamaa</IonLabel>
         </IonItem>
         <div className="ion-padding" slot="content">
-          Fifth Content
+          <Card />
         </div>
       </IonAccordion>
     </IonAccordionGroup>
