@@ -1,5 +1,5 @@
 import "./ClientList.css";
-import { IonItem, IonLabel, IonList } from "@ionic/react";
+import Accordion from "../components/Accordion";
 
 interface ContainerProps {
   name: string;
@@ -7,23 +7,9 @@ interface ContainerProps {
 
 const ClientList: React.FC<ContainerProps> = ({ name }) => {
   return (
-      <IonList inset={true}>
-        <IonItem>
-          <IonLabel>Justus</IonLabel>
-        </IonItem>
-        <IonItem>
-          <IonLabel>Mama Moraa</IonLabel>
-        </IonItem>
-        <IonItem>
-          <IonLabel>Mujamaa</IonLabel>
-        </IonItem>
-        <IonItem>
-          <IonLabel>Mama Salome</IonLabel>
-        </IonItem>
-        <IonItem>
-          <IonLabel>Engineer Erick</IonLabel>
-        </IonItem>
-      </IonList>
+    <>
+      <Accordion/>
+    </>
   );
 };
 
