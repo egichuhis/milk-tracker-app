@@ -4,25 +4,29 @@ import {
   IonCard,
   IonCardContent,
   IonCardHeader,
-  IonCardSubtitle,
   IonCardTitle,
+  IonCardSubtitle,
+  IonItem,
+  IonInput,
 } from "@ionic/react";
+import DatetimeButton from "../components/DatetimeButton";
 
 function Card() {
   return (
     <IonCard>
       <IonCardHeader>
-        <IonCardTitle>Card Title</IonCardTitle>
-        <IonCardSubtitle>Card Subtitle</IonCardSubtitle>
+        <IonCardSubtitle>
+          <DatetimeButton />
+        </IonCardSubtitle>
       </IonCardHeader>
 
       <IonCardContent>
-        Here's a small text description for the card content. Nothing more,
-        nothing less.
+        <IonItem>
+          <IonInput label="Milk Sold:"></IonInput>
+        </IonItem>
+        <IonButton fill="clear">Edit</IonButton>
+        <IonButton fill="clear">Save</IonButton>
       </IonCardContent>
-
-      <IonButton fill="clear">Action 1</IonButton>
-      <IonButton fill="clear">Action 2</IonButton>
     </IonCard>
   );
 }
