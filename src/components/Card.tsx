@@ -12,6 +12,7 @@ import {
 import DatetimeButton from "../components/DatetimeButton";
 
 function Card() {
+  const milkAmt = 2;
   return (
     <IonCard>
       <IonCardHeader>
@@ -22,7 +23,7 @@ function Card() {
 
       <IonCardContent>
         <IonItem>
-          <IonInput label="Milk Sold:"></IonInput>
+          <IonInput>{`Milk Sold: ${milkAmt} Litres`}</IonInput>
         </IonItem>
         <IonButton fill="clear">Edit</IonButton>
         <IonButton fill="clear">Save</IonButton>
